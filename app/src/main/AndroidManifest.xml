@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dexter.practiceproject" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".PracticeProject"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".show"
+            android:label="@string/title_activity_show"
+            android:parentActivityName=".PracticeProject" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dexter.practiceproject.PracticeProject" />
+        </activity>
+        <activity
+            android:name=".ShowPic"
+            android:label="@string/title_activity_show_pic"
+            android:parentActivityName=".PracticeProject" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dexter.practiceproject.PracticeProject" />
+        </activity>
+    </application>
+
+</manifest>
